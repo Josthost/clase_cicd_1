@@ -13,7 +13,7 @@ on:
        - develop
        - release
 
-       jobs:
+jobs:
   detect-branch:                       
      runs-on: ubuntu-latest            
 
@@ -29,7 +29,8 @@ on:
          if: ${{ github.ref == 'refs/heads/main' }}
          run: echo "Hello, main!"
 
-detect-pr:
+  
+  detect-pr:
       runs-on: ubuntu-latest
 
       steps:
